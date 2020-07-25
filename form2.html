@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            width: 210mm;
+            height: 297mm;
+        }
+        form{
+            position: absolute;
+            width: 80%;
+            left: 7%;
+            top: 20%;
+            border: solid black 1px;
+            padding:0.5cm;
+        }
+        form label{
+            color:blue;
+            font-size: 1.2em;
+        }
+        form input, form textarea, select{
+            font-size: 1.1em;
+            padding:0.1cm;
+            min-width:35vw ;
+        }
+        
+        h1{
+            position: absolute;
+            width: 80%;
+            text-align: center;
+            left: 10%;
+            top: 22%;
+            text-decoration: underline;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .header{
+            width: 100%;
+            position: absolute;
+        }
+        .header img{
+            width: 18%;
+            height: 14%;
+            margin-top: -1%;
+            margin-left:27% ;
+
+        }
+        .header h3{
+            width: 60%;
+            font-size: 2.5em;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'ebuchet MS', sans-serif;
+            color: tomato;
+            margin-top: -8%;
+            margin-left: 41%;
+            text-decoration: underline;
+
+        }
+
+
+
+.save{
+    font-size: 1.3em;
+    color: white;
+    background-color: rgb(0, 162, 255);
+    padding:;
+    position: absolute;
+    font-family: monospace;
+    left: 1%;
+    top: 2%;
+    border-radius: 10px ;
+}
+b{
+    color: red;
+}
+
+
+    </style>
+    <link rel="icon" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samchikitsa</title>
+</head>
+<body>
+    <div class="header">
+        <img class="brand-img" src="logo.png" alt="logo">
+        <h3> SAMCHIKITSA </h3>
+        <button class="save" onclick="window.print()">SAVE AS PDF </button>
+    </div>
+    <h1>ACUTE DISEASE FORM</h1>
+    <form action="" id="ACf">
+        <table>
+        <tr><td><label for="cause">CAUSE:<b>*</b></label></td>
+        <td><input type="text"  placeholder="cause" name="cause"><br>
+        <tr><td><label for="MO">MODE OF ONSET<b>*</b></label></td>
+        <td><select name="MO" id="MO" form="ACf">
+            <option value="Sudden">Sudden</option>
+            <option value="Gradual">Gradual</option>
+        </select></td><br>
+        <tr><td><label for="CW">CHANGE IN WEATHER<b>*</b></label></td>
+        <td><input type="text" name="CW" id="" placeholder="CHANGE IN WEATHER"><br>
+        <tr><td><label for="location">LOCATION<b>*</b></label></td>
+        <td><textarea name="location" id="location" cols="30" rows="3"></textarea></td></tr><br>
+        <tr><td><label for="address">ADDRESS:<b>*</b></label></td>
+        <td><textarea name="address" id="address" cols="30" rows="4" placeholder="Enter your complete address"></textarea></td></tr><br>
+        <tr><td><label for="aggravation">GENERAL MODALITIES:<b>*</b></label></td>
+        <td><input type="text" name="aggravation" id="aggravation" placeholder="aggravation"><br>
+        <tr><td><label for="time">TIME:<b>*</b></label></td>
+        <td><input type="text" name="time" id="time"><br>
+        <tr><td><label for="sensation"> SENSATION:<b>*</b></label></td>
+        <td><textarea name="sensation" id="sensation" cols="30" rows="4"></textarea></td></tr><br>
+        <tr><td><label for="CS">CHARACTER OF SYMPTOM<b>*</b></label></td>
+        <td><textarea name="CS" id="CS" cols="30" rows="4"></textarea></td></tr><br>
+        <tr><td><label for="CoS">CONFIRMATORY OF SYMPTOMS<b>*</b></label></td>
+        <td><textarea name="CoS" id="CoS" cols="30" rows="4"></textarea></td></tr><br>
+        </table>
+    </form>
+</body>
+</html>
