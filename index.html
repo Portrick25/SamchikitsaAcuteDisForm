@@ -6,14 +6,14 @@
             margin: 0;
         }
         body{
-            width: 210mm;
-            height: 297mm;
+            width: 190mm;
+            height: 250mm;
         }
         form{
             position: absolute;
             width: 80%;
             left: 7%;
-            top: 20%;
+            top: 22%;
             border: solid black 1px;
             padding:0.5cm;
         }
@@ -34,22 +34,24 @@
             left: 10%;
             top: 22%;
             text-decoration: underline;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Barlow Semi Condensed', sans-serif;
         }
         .header h3{
     font-size: 2.5em;
     color: tomato;
+    padding-left:0.5cm ;
     position: absolute;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'ebuchet MS', sans-serif;
-    left: 45%;
-    top: 4%;
+    font-family:'Barlow Semi Condensed', sans-serif;
+    text-decoration: underline;
+    left: 47%;
+    top: 7%;
 }
 .brand-img{
     position: absolute;
-    width: 6cm;
-    height: 4cm;
+    padding:5mm;
+    width: 3cm;
+    height: 3cm;
     left: 30%;
-    top:;
 }
 
 
@@ -58,7 +60,6 @@
     font-size: 1.3em;
     color: white;
     background-color: rgb(0, 162, 255);
-    padding:;
     position: absolute;
     font-family: monospace;
     left: 1%;
@@ -74,21 +75,22 @@ b{
     }
 .header img{
     position: absolute;
-    left: 5%;
+    left: 10%;
+    padding:0.2cm;
     top: 1%;
-    width: 8em;
-    height: 6em;
+    width: 2cm;
+    height: 2cm;
 
 }
 .header h3{
     position: absolute;
     left: 30%;
-    top: 6%;
+    top: 4%;
     font-size: 2em;
 }
 form{
             position: absolute;
-            width: 96vw;
+            width: 97vw;
             left: 1%;
             top: 20%;
             border: solid black 1px;
@@ -111,7 +113,6 @@ form{
             left: 10%;
             top: 22%;
             text-decoration: underline;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
 
@@ -120,17 +121,17 @@ form{
     width: 40%;
     color: white;
     background-color: rgb(0, 162, 255);
-    padding:;
     position: absolute;
     font-family: monospace;
     left: 30%;
-    top: 124%;
+    top:140%;
     border-radius: 10px ;
 }
 
 }
 
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap" rel="stylesheet">
     <link rel="icon" href="logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -138,7 +139,7 @@ form{
 </head>
 <body>
     <div class="header">
-        <img class="brand-img" src="logo.png" alt="logo">
+        <img class="brand-img" src="logo1.jpeg" alt="logo">
         <h3> SAMCHIKITSA </h3>
         <button class="save" onclick="window.print()">SAVE AS PDF </button>
     </div>
@@ -156,10 +157,8 @@ form{
         <td><input type="text" name="CW" id="" placeholder="CHANGE IN WEATHER"><br>
         <tr><td><label for="location">LOCATION<b>*</b></label></td>
         <td><textarea name="location" id="location" cols="30" rows="3"></textarea></td></tr><br>
-        <tr><td><label for="address">ADDRESS:<b>*</b></label></td>
-        <td><textarea name="address" id="address" cols="30" rows="4" placeholder="Enter your complete address"></textarea></td></tr><br>
         <tr><td><label for="aggravation">GENERAL MODALITIES:<b>*</b></label></td>
-        <td><input type="text" name="aggravation" id="aggravation" placeholder="aggravation"><br>
+        <td><input type="text" name="aggravation" id="aggravation" placeholder="Aggravation/Amleoration"><br>
         <tr><td><label for="time">TIME:<b>*</b></label></td>
         <td><input type="text" name="time" id="time"><br>
         <tr><td><label for="sensation"> SENSATION:<b>*</b></label></td>
@@ -168,6 +167,8 @@ form{
         <td><textarea name="CS" id="CS" cols="30" rows="4"></textarea></td></tr><br>
         <tr><td><label for="CoS">CONFIRMATORY OF SYMPTOMS<b>*</b></label></td>
         <td><textarea name="CoS" id="CoS" cols="30" rows="4"></textarea></td></tr><br>
+        <tr><td><label for="additional">ADDITIONAL:<b>*</b></label></td>
+        <td><textarea name="address" id="address" cols="30" rows="4" placeholder="Add something you think is relevant."></textarea></td></tr><br>
         </table>
     </form>
 </body>
